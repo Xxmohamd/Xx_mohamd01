@@ -24,16 +24,16 @@ client6.login(process.env.TOKEN6);
 
 
 client.on('message', message => {
-  if (message.content === 'd') {
+  if (message.content === '$d') {
 message.channel.send('#daily')
   }
-  if(message.content === 'c'){
+  if(message.content === '$c'){
 message.channel.send('#credits')
   }
-  if(message.content === 'r'){
+  if(message.content === '$r'){
 message.channel.send("#rep "+"<@" + myid + ">")
   }
-  if (message.content === 'p') {
+  if (message.content === '$p') {
 message.channel.send('#profile')
   }
   if(message.content.startsWith("s1")) {
