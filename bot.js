@@ -24,7 +24,7 @@ client6.login(process.env.TOKEN6);
 
 
 client.on('message', message => {
-  if (message.content === '$d') {
+  if (message.content === '%d') {
 message.channel.send('#daily')
   }
   if(message.content === '$c'){
@@ -36,7 +36,7 @@ message.channel.send("#rep "+"<@" + myid + ">")
   if (message.content === '$p') {
 message.channel.send('#profile')
   }
-  if(message.content.startsWith("s1")) {
+  if(message.content.startsWith("$s")) {
     var text = message.content.split(' ').slice(1).join(' ');
      message.channel.send(text);
   }
@@ -185,7 +185,7 @@ if (message.content === prefix+'fast') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 10000; x++) {
-        message.channel.send(`**??? ???? ??? **[ " ${x} " ]`)
+        message.channel.send(`**yoyssef so noob **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
